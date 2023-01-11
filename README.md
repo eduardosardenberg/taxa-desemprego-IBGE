@@ -10,8 +10,7 @@ Para iniciar o codigo, basta digitar na sua linha de codigo o texto:
 
 ## Resultado obtido:
 
-<img width="1067" alt="image" src="https://user-images.githubusercontent.com/71990612/211900324-8fa6cded-aa19-4c50-991a-642adbad95a5.png">
-
+<img width="1279" alt="image" src="https://user-images.githubusercontent.com/71990612/211900703-eff4b58e-27d1-40ff-ba6c-a4728dbfa9e9.png">
 
 ## Fonte de dados
 - Utilizei uma **API** disponibilizada pelo IBGE
