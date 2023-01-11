@@ -1,8 +1,8 @@
 #AUTOR: Eduardo Sardenberg Tavares
 
 import pandas as pd
-import requests
 import matplotlib.pyplot as plt
+import requests
 
 
 def main():
@@ -13,9 +13,15 @@ def main():
     #print(request)
 
     #olhando o print do request, observei que o 'V' e o 'D3N' eram metricas importantes para o DataFrame
-    taxa_desemprego = [float(i['V']) for i in request[1:]] 
-    trimestre = [i['D3N'] for i in request[1:]]
+   
+    taxa_desemprego = []
+    for i in request[1:]:
+        taxa_desemprego.append(float(i['V']))
 
+    trimestre = []
+    for i in request[1:]:
+        trimestre.append(i['D3N'])
+    
     #Comecando a criar o DataFrame
     dfibge = pd.DataFrame( taxa_desemprego, index=trimestre, columns=['Taxa de Desemprego - IBGE'])
 
